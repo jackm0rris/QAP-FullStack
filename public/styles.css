@@ -1,88 +1,116 @@
 body {
-    background: linear-gradient(90deg, rgba(93,142,251,1) 0%, rgba(93,142,251,1) 50%, rgba(0,212,255,1) 100%);
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
+    background: linear-gradient(120deg, #ff7e5f 0%, #feb47b 50%, #ffccbc 100%);
+    height: 100vh;
+    margin: 0;
     font-family: 'Lato', sans-serif;
     display: flex;
-    color: #F6F6F6;
+    justify-content: center;
+    align-items: center;
+    color: #3e3e3e;
 }
 
 .main-content {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    align-items: center;
-    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 245, 235, 0.95);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #4a4a4a;
 }
 
 .main-content .error-message {
-    color: yellow;
+    color: #ff4d4d;
     font-weight: bold;
     font-size: 16px;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 .main-content h1 {
-    font-size: 50px;
+    font-size: 34px;
+    margin-bottom: 15px;
+    color: #5f4339;
 }
 
 .main-content ul {
-    margin: 0px;
-}
-
-.main-content ul :not(:first-child) {
-    padding-top: 10px;
+    padding: 0;
+    list-style: none;
+    margin: 15px 0;
 }
 
 .main-content li {
-    font-size: 20px;
+    font-size: 18px;
+    margin: 8px 0;
 }
 
-.main-content a:link {
-    color: #F6F6F6;
-}
-  
-.main-content a:visited {
+.main-content a {
+    color: #d35400;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.main-content a:hover {
+    text-decoration: underline;
+    color: #e67e22;
 }
 
 .main-content form {
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: stretch;
 }
 
 .main-content form .form-input-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .main-content form label {
-    padding-right: 5px;
+    padding-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #5f4339;
 }
 
 .main-content form input {
-    border-radius: 5px;
-    border: 0px;
-    font-size: 14px;
-    padding: 5px;
+    flex: 1;
+    border-radius: 6px;
+    border: 1px solid #d9a299;
+    font-size: 16px;
+    padding: 8px;
+    background: #fff8f0;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .main-content button {
     border: none;
-    background: #F6F6F6;
-    mix-blend-mode: screen;
-    padding: 6px;
-    border-radius: 5px;
-    margin-left: 5px;
+    background: #d35400;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.main-content button:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
 }
 
 .main-content .index-button-container button {
-    font-size: 25px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 12px;
+    margin: 12px 0;
+    width: 100%;
 }
+
+
+
+
+
